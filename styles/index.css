@@ -3,27 +3,22 @@
  * - Add any styles you want here!
  */
 body {
-  background: #D2C3DB;
+  background: #CCC6DD;
 }
 
 * {
   box-sizing: border-box;
 }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-}
-
 /* For mobile phones: */
 [class*="col-"] {
   width: 100%;
+}
+.header a{
+  color: #39296B;
+}
+.boxed a {
+  color: #7C2657;
 }
 
 @media only screen and (min-width: 600px) {
@@ -65,6 +60,11 @@ body {
   padding-top: 0px;
   padding-bottom: 0px;
   border-radius: 5px;
+  padding: 10px;
+  background-color: #BB749C;
+  color: black;
+  cursor: pointer;
+  
 }
 
 .border{
@@ -76,14 +76,16 @@ body {
   text-align: center;
   background-color: #776AA0;
   box-shadow: 5px 5px 5px;
-  border-radius: 2px;
+  border-radius: 5px;
+  display: inline-block;
 }
-
+.container {
+  padding: 30px;
+}
 h1 {
   font: helvetica;
   text-align: center;
-  color: black;
- 
+  color: #39296B;
 }
 .header {
   background-color: #AB90BA;
@@ -100,16 +102,12 @@ h1 {
 .bottons {
   margin: 0px;
   padding: 0px 0px 3px 5px;
+  display: inline-block;
   position: relative;
   bottom: 0px;
 }
 
-.collapsible {
-  background-color: #BB749C;
-  color: black;
-  cursor: pointer;
-  width: 100%;
-  border: none;
+
 }
 #content1 {
   padding: 0 18px;
