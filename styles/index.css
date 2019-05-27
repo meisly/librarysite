@@ -5,7 +5,9 @@
 body {
   background: #CCC6DD;
 }
-
+.container {
+  background-color:#CCC6DD;
+}
 * {
   box-sizing: border-box;
 }
@@ -15,10 +17,13 @@ body {
   width: 100%;
 }
 .header a{
-  color: #39296B;
+  color: #693F81;
 }
 .boxed a {
   color: #7C2657;
+}
+.text a {
+  color: #39296B;
 }
 
 @media only screen and (min-width: 600px) {
@@ -64,6 +69,8 @@ body {
   background-color: #BB749C;
   color: black;
   cursor: pointer;
+  position: relative;
+  z-index: 0;
   
 }
 
@@ -80,13 +87,15 @@ body {
   display: inline-block;
 }
 .container {
-  padding: 30px;
+  width: 100%;
+  padding: 0px;
 }
 h1 {
   font: helvetica;
   text-align: center;
   color: #39296B;
 }
+
 .header {
   background-color: #AB90BA;
   padding-top: 10px;
@@ -95,9 +104,10 @@ h1 {
   margin: 0px;
   border-radius: 5px;
   position: sticky;
-  top: 0;
-  right: 0;
+  position: -webkit-sticky;
+  top:0;
   left: 0;
+  z-index: 10;
 }
 .bottons {
   margin: 0px;
@@ -106,7 +116,10 @@ h1 {
   position: relative;
   bottom: 0px;
 }
-
+.video {
+  display: inline-block;
+  padding: 5px;
+}
 
 }
 #content1 {

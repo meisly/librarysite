@@ -6,7 +6,7 @@
   <!--  Meta  -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Learning Library</title>
+  <title>Purple Cow Programming Library</title>
   <!--  Styles  -->
   <link rel="stylesheet" href="styles/index.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -14,12 +14,12 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body class="container">
   <!--
 Comment text
   -->
   <div class="header">
-    <h1>Learning Library</h1>
+    <h1>Purple Cow Library</h1>
       <div id="linkhome" class="bottons col-2">
         <a href="http://google.com">
           Home
@@ -30,61 +30,75 @@ Comment text
           About Us
         </a>
       </div>
+      <div id="tutorials-btn" class="bottons col-2">
+        <a href="#tutorials">
+          Tutorials
+        </a>
+      </div>
+      <div id="tools-btn" class="bottons col-2">
+        <a href="#tools">
+          Tools and Libraries
+        </a>
+      </div>
+      <div id="videos-btn" class="bottons col-2">
+        <a href="#videos">
+          Videos
+        </a>
+      </div>
   </div>
 
+  <div id="tutorials section">
+    <div class="boxed col-12" id="tutorials">
+        <h2>Tutorials</h2>
+    </div>
+    <h4 id="webdevtut">Web Development</h4>
+      <div class="text">
+        <a href="https://www.w3schools.com/default.asp">w3schools</a>
+        <p>This site is a really good reference site for beginners.  It has information on HTML, CSS and Javascript as well as some common web-development libraries. I don't know much about their tutorial but it exists</p>
+        <a href="https://www.freecodecamp.org/">Free Code Camp</a>
+        <p>This site has several amazing tutorials.  They will walk you through beginning front-end web-development with HTML, CSS and Javascript all the way through back-end development and app development.  They have also added some new courses on data visualizaton and APIs.  They're a pretty great resource and they give certificates if that motivates you.</p>
+      </div>
+    <h4 id="gamdevtut">Game Development Tutorials</h4>
+      <div class="text">
+        <a href="https://www.gamefromscratch.com/page/Game-Development-Tutorial-Series.aspx">Game From Scratch</a>
+        <p>This site has a whole host of game development tutorials. I haven't tried them out myself but they feature tutorials on several popular technologies including game engines such as Godot 3, Armory and LibGDX, Blender and other rendering software and several programming languages including Lua and C++. I recommend that you check it out and see if there's a tutorial for you.</p>
+      </div>
+    <h4 id="misctut">Miscellaneous Tutorials</h4>
+  </div>
+  <div id="tools section" class="text">
+    <div class="boxed col-12" id="tools">
+        <h2>Tools and Libraries</h2>
+    </div> 
+    <h4 id="webdevtools">Web Development Tools</h4>
+    <a href="https://getbootstrap.com/docs/4.3/getting-started/introduction/">Bootstrap Documentation</a>
+    <p>Bootstrap is a popular library for making responsive webpages.  I used it to make this page.</p>
+    <h4 id="misctool">Other Tools</h4>
+  </div>
+  <div id="video section">
+    <div class="boxed col-12" id="vidoes">
+      <h2>Videos</h2>
+    </div>
+    <h4 id="webdevvid">Web Development</h4>
+    <div class="videoblock text">
+      <h5 class="video"> Intro to CSS with <a href="https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw">The Coding Train</a>
+        <br>
+      <iframe width="360" height="204" src="https://www.youtube.com/embed/zGL8q8iQSQw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </h5>
+      <h5 class="video">Intro to Javascript with <a href="https://www.youtube.com/channel/UCfzlCWGWYyIQ0aLC5w48gBQ">Sentdex</a>
+        <br>
+        <iframe width="360" height="204" src="https://www.youtube.com/embed/GRtSc2Mp0WI?list=PLQVvvaa0QuDf2_A04M-m0WubgLf2_geR6" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </h5>
+    </div>
+    <h4 id="programvid">Programming</h4>
+    <div class="videoblock text">
+      <h5 class="video"> Intro to Python <a href="https://www.youtube.com/channel/UCfzlCWGWYyIQ0aLC5w48gBQ">Sentdex</a>
+        <br>
+        <iframe width="360" height="204" src="https://www.youtube.com/embed/eXBD2bB9-RA?list=PLQVvvaa0QuDeAams7fkdcwOGBpGdHpXln" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </h5>
+    </div>
 
-  <div class="boxed col-12">
-    <a data-toggle="collapse" href="#content1">
-      <h2>Web Development</h2>
-    </a>
-  </div>
-
-  <div class="collapse row" id="content1">
-    <div class="border col-4 minibox">
-      <a data-toggle="collapse" href="#content1a">
-        Tutorials and articles
-      </a>
-    </div>
-    <div class="border col-4 minibox">
-      <a data-toggle="collapse" href="#content1b">
-        Libraries
-      </a>
-    </div>
-    <div class="border col-4 minibox">
-      <a data-toggle="collapse" href="#content1c">
-        Videos
-      </a>
-    </div>
-  </div>
-  <div class="container">
-    <div class="collapse" id="content1a">
-      <a href="https://www.w3schools.com/default.asp">w3schools</a>
-      <p>This site is a really good reference site for beginners.  It has information on HTML, CSS and Javascript as well as some commone web-development libraries.</p>
-      <a href="https://www.freecodecamp.org/">Free Code Camp</a>
-      <p>This site has an amazing tutorial.  They will walk you through beginning front-end web-development with HTML, CSS and Javascript all the way through back-end development and app development.  They have also added some new courses on data visualizaton and APIs.  They're a pretty great resource and they give certificates if that motivates you.</p>
-    </div>
-    <div class="collapse" id="content1b">
-      <a href="https://getbootstrap.com/docs/4.3/getting-started/introduction/">Bootstrap Documentation</a>
-      <p>Bootstrap is a popular library for making responsive webpages.  I used it to make this page.</p>
-    </div>
-</div>
-  <div class="boxed">
-    <a data-toggle="collapse" href="content2">
-      <h2>Game Development</h2>
-    </a>
-  </div>
-  
-  <div class="boxed" >
-    <a data-toggle="collapse" href="#content3">
-      <h2>System/Other</h2>
-    </a>
-    <div class="collapse" id="content3">
-      <p>contentcontent</p>
-      <p>blahblah</p>
-      <img src="https://assets.albiononline.com/assets/images/header/logo.png?cb=106"/>
-    </div>
-  </div>
-  
+    <h4 id="miscvid">Miscellaneous</h4>
+  </div>  
     
   <!-- Scripts -->
   <script src="scripts/index.js"></script>
